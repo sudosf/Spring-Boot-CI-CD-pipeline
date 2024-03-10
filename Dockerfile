@@ -14,7 +14,7 @@ COPY src ./src
 RUN mvn clean package
 
 # Use an OpenJDK image with Java 21 as the base image for the final stage
-FROM adoptopenjdk/openjdk21:jdk-slim AS runtime
+FROM openjdk:21-jdk-slim
 
 # Set the working directory in the container
 WORKDIR /app
