@@ -21,6 +21,7 @@
   </properties>
 
   <dependencies>
+    
     <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -48,7 +49,19 @@
       <version>12.6.1.jre11</version>
     </dependency>
 
-
   </dependencies>
+
+  <build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+		</plugins>
+
+		<finalName>beanchat-app</finalName>
+	</build>
 
 </project>
